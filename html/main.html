@@ -8,7 +8,7 @@
 
 
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
 
     <!-- my CSS -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -187,35 +187,50 @@
     <section class="main_intro">
         <div class="container">
             <div class="video_box">
-                <video src="../video/main_visual.mp4" autoplay loop muted></video>
-                <div class="video_caption">
-                    <h2>
-                        경기도박물관은 항상 우리 곁에 있습니다.<br>
-                        박물관의 전시관람은 무료입니다.
-                    </h2>
-                    <a href="#">방문예약하기</a>
+                <div class="video_box_inner">
+                    <video src="../video/main_visual.mp4" autoplay loop muted></video>
+                    <div class="video_caption">
+                        <h2>
+                            경기도박물관은 항상 우리 곁에 있습니다.<br>
+                            박물관의 전시관람은 무료입니다.
+                        </h2>
+                        <a href="#">방문예약하기</a>
+                    </div>
                 </div>
             </div>
-            <div class="video_bottom">
+            <div class="video_bottom clearfix">
                 <div class="today_time">
                     오늘의 관람시간
                 </div>
-                <div class="today_time2">
-                    10:00 - 17:30(입장은 오후 4시 30분까지 가능합니다.)
+                <div class="time_ticket">
+                    <div class="today_time2">
+                        10:00 - 17:30(입장은 오후 4시 30분까지 가능합니다.)
+                    </div>
+                    <div class="ticket">
+                        입장권: 무료(Admission Tickets:Free)
+                    </div>
                 </div>
-                <div class="ticket">
-                    입장권: 무료(Admission Tickets:Free)
-                </div>
-                <div class="booking">
-                    사전관람 예약하기
-                </div>
-                <div class="directions">
-                    오시는 길 바로가기
+                <div class="booking_dir">
+                    <div>
+                        <a href="#" class="booking">
+                            사전관람 예약하기
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="directions">
+                            오시는 길 바로가기
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="video_right">
-                <span>SCROLL</span>
-                <span></span>
+                <div>S</div>
+                <div>C</div>
+                <div>R</div>
+                <div>O</div>
+                <div>L</div>
+                <div>L</div>
+                <span class="scroll_line"></span>
             </div>
         </div>
     </section><!-- main_intro Area End -->
@@ -223,57 +238,60 @@
 
     <!-- main_notice Area Start -->
     <section class="main_notice">
-        <div class="notice_txt">
-            공지사항
-        </div>
-        <div class="notice_title">
+        <div class="container">
+            <div class="notice_txt">
+                공지사항
+            </div>
 
-            <!-- Slider main container -->
-            <div class="swiper-container-notice">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <span>2021.02.25</span>
-                            2021년 경기도박물관 문화나눔 교육프로그램 교육강사[프리랜서] 모집 공고
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <span>2021.02.23</span>
-                            3월 1일(월) 개관 및 3월 2일(화) 특별휴관 안내
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <span>2021.02.08</span>
-                            경기도박물관 설연휴 운영안내
-                        </a>    
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <span>2021.02.03</span>
-                            2021년 ‘백소백복(白소百福)’ 나눔행사 안내
-                        </a>    
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <span>2020.09.25</span>
-                            박물관 입장관련 방문자 관람 지침
-                        </a>    
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <span>2020.08.03</span>
-                            코로나-19 한시적 조치에 따른 관람 시간 안내
-                        </a>    
+            <div class="notice_title">
+
+                <!-- Slider main container -->
+                <div class="swiper-container-notice">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span>2021.02.25</span>
+                                2021년 경기도박물관 문화나눔 교육프로그램 교육강사[프리랜서] 모집 공고
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span>2021.02.23</span>
+                                3월 1일(월) 개관 및 3월 2일(화) 특별휴관 안내
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span>2021.02.08</span>
+                                경기도박물관 설연휴 운영안내
+                            </a>    
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span>2021.02.03</span>
+                                2021년 ‘백소백복(白소百福)’ 나눔행사 안내
+                            </a>    
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span>2020.09.25</span>
+                                박물관 입장관련 방문자 관람 지침
+                            </a>    
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span>2020.08.03</span>
+                                코로나-19 한시적 조치에 따른 관람 시간 안내
+                            </a>    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="notice_more">
-            <a href="#">더 알아보기</a>
+            <div class="notice_more">
+                <a href="#">더 알아보기</a>
+            </div>
         </div>
     </section><!-- main_notice Area End -->
 
@@ -480,7 +498,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_청자-꽃-모양-잔과-잔받침.png" alt="꽃 모양 잔과 잔받침 청자">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -496,7 +514,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_서대_m.jpg" alt="서대">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -512,7 +530,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_청자과형주자.jpg" alt="청자과형주자">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -528,7 +546,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_헌종가례진하도병_MM.jpg" alt="헌종가례진하계병">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -544,7 +562,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_단령8_ss.jpg" alt="단령">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -560,7 +578,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_초조본대방광불화엄경_MM.png" alt="초조본대방광불화엄경">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -576,7 +594,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_백자완.jpg" alt="백자완">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -592,7 +610,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_서거정필적.jpg" alt="서거정 필적">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -608,7 +626,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_소창의1.png" alt="소창의">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -624,7 +642,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_백자병.jpg" alt="백자병">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -640,7 +658,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_분청사기철화연당초문병_MM.jpg" alt="분청사기철화연당초문병">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -656,7 +674,7 @@
                             <div class="img_box">
                                 <img src="../images/main/relics_중치막1.jpg" alt="중치막">
                                 <div class="screen">
-                                    <a href="#">자세히 알아보기</a>
+                                    <span>자세히 알아보기</span>
                                 </div>
                             </div>
                             <figcaption>
@@ -782,7 +800,7 @@
     <script src='http://code.jquery.com/jquery-3.5.1.min.js'></script>
 
     <!-- swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
 
     <!-- masonry JS -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

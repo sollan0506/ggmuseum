@@ -1,2 +1,230 @@
 @charset "utf-8";
 
+
+
+
+/* ***************** main_intro Area Start ******************** */
+.main_intro .container {
+    width: 100%;
+    position: relative;
+    padding: 0 5%;
+}
+.main_intro .container .video_box {
+    width: 100%;
+    position: relative;
+    padding-top: 50%;
+    overflow: hidden;
+}
+.main_intro .video_box .video_box_inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main_intro .video_box .video_box_inner video {
+    width: 100%;
+}
+.main_intro .video_box .video_box_inner .video_caption {
+    width: 100%;
+    text-align: center;
+    position: absolute; 
+    left: 50%; 
+    top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.main_intro .video_box .video_box_inner .video_caption h2 {
+    width: 100%;
+    font-size: 5.6rem;
+    font-weight: bold;
+    line-height: 1.43;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 34px;
+}
+.main_intro .video_box .video_box_inner .video_caption a {
+    display: inline-block;
+    border: 1px solid #1f5153;
+    background-color: #1f5153;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 32px;
+}
+.main_intro .video_bottom {
+    width: 100%;
+    height: 54px;
+}
+.main_intro .video_bottom .today_time {
+    width: 190px;
+    height: 100%;
+    float: left;
+    background-color: #1f5153;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 13px 0 15px 52px;
+    background-image: url(../images/main/ic-time-white-24-dp.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 15px;
+    background-size: 20px;
+}
+.main_intro .video_bottom .time_ticket {
+    float: left;
+    display: flex;
+}
+.main_intro .video_bottom .time_ticket .today_time2 {
+    height: 100%;
+    font-size: 1.6rem;
+    position: relative;
+    padding: 15px 15px 0 20px;
+}
+.main_intro .video_bottom .time_ticket .today_time2::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 13px;
+    background-color: #ccc;
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+.main_intro .video_bottom .time_ticket .ticket {
+    height: 100%;
+    font-size: 1.6rem;
+    position: relative;
+    padding: 15px 0 0 15px;
+}
+.main_intro .video_bottom .booking_dir {
+    float: right;
+    display: flex;
+    padding: 15px 20px 0 0;
+}
+.main_intro .video_bottom .booking_dir .booking {
+    display: block;
+    color: #f00;
+    font-size: 1.6rem;
+    background-image: url(../images/main/ticket.png);
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 30px;
+    padding: 0 20px 0 40px;
+}
+.main_intro .video_bottom .booking_dir .directions {
+    display: block;
+    color: #1f5153;
+    font-size: 1.6rem;
+    background-image: url(../images/main/ic-car-green-24-dp.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 20px;
+    padding: 0 0 0 40px;
+}
+.main_intro .video_right {
+    position: absolute;
+    right: 2.5%;
+    bottom: 200px;
+}
+
+
+
+
+/* ***************** main_notice Area Start ******************** */
+.main_notice {
+    width: 100%;
+    padding: 100px calc(5.2% * 2) 88px;
+}
+.main_notice .container {
+    width: 100%;
+    height: 72px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    display: flex;
+}
+.main_notice .notice_txt {
+    width: 155px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-image: url(../images/main/ic-notice-black-24-dp.svg);
+    background-repeat: no-repeat;
+    background-position: 30px 24px;
+    background-size: 20px;
+    position: relative;
+    padding: 20px 30px 0 60px;
+}
+.main_notice .notice_txt::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.main_notice .notice_title {
+    width: calc(100% - 155px - 140px);
+    height: 100%;
+    padding: 20px 140px 0 30px;
+}
+.main_notice .notice_title .swiper-slide > a {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.main_notice .notice_title .swiper-slide > a > span {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #666;
+    padding-right: 15px;
+}
+.main_notice .notice_more {
+    width: 140px;
+    height: 100%;
+    padding-top: 20px;
+}
+.main_notice .notice_more > a {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #1f5153;
+    background-image: url(../images/main/ic-arrow-right-green-24-dp.svg);
+    background-repeat: no-repeat;
+    background-position: 85px 6px;
+    background-size: 20px;
+    padding-right: 50px;
+}
+
+
+
+
+/* ***************** main_news Area Start ******************** */
+.main_news {
+    position: relative;
+    padding-bottom: 72px;
+}
+.main_news h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+.main_news .swiper-container-news {
+    position: relative;
+    margin-left: 8%;
+}
+.main_news .swiper-slide {
+    width: 33.33%;
+    padding: 0 3%;
+}
