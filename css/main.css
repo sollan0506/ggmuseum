@@ -210,7 +210,25 @@
 /* ***************** main_news Area Start ******************** */
 .main_news {
     position: relative;
+    overflow: hidden;
     padding-bottom: 72px;
+    /* padding: 0 calc(5.2% * 2) 72px calc(5.2% * 2); */
+}
+.main_news::before {
+    content: '';
+    display: block;
+    width: 8%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.main_news .container {
+    width: 100%;
+    height: 100%;
+    padding: 0 calc(5.2% * 2);
 }
 .main_news h2 {
     width: 100%;
@@ -220,11 +238,147 @@
     letter-spacing: 5px;
     padding-bottom: 50px;
 }
+.main_news .news_content {
+    position: relative;
+}
 .main_news .swiper-container-news {
     position: relative;
-    margin-left: 8%;
+    /* list-style: none; */
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    padding: 0;
+    margin: 0 auto;
+}
+.main_news .news_button {
+    width: 120px;
+    position: absolute;
+    top: -108px;
+    right: 0;
+}
+.main_news .news_button > div {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #1f5153;
+    float: left;
+    cursor: pointer;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.main_news .news_button > div:first-child {
+    background: url(../images/main/ic-angle-legt-black-24-dp.svg) no-repeat center center;
+    background-size: 10px;
+    margin-right: 8px;
+}
+.main_news .news_button > div:last-child {
+    background: url(../images/main/ic-angle-right-black-24-dp.svg) no-repeat center center;
+    background-size: 10px;
+}
+.main_news .news_button > div:hover {
+    background-color: #1f5153;
 }
 .main_news .swiper-slide {
     width: 33.33%;
+    position: relative;
     padding: 0 3%;
+}
+.main_news .swiper-slide .img_box {
+    position: relative;
+    overflow: hidden;
+}
+.main_news .swiper-slide .img_box .category {
+    width: 78px;
+    border: 2px solid #1f5153;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #1f5153;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    padding: 3px 0 2px;
+}
+.main_news .swiper-slide .img_box img {
+    width: 100%;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.main_news .swiper-slide:hover .img_box img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.main_news .swiper-slide .img_box .img_hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.main_news .swiper-slide:hover .img_box .img_hover {
+    opacity: 1;
+}
+.main_news .swiper-slide .img_box a {
+    display: block;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1f5153;
+    position: absolute; 
+    left: 50%; 
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding-top: 15px;
+    opacity: 0;
+
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.main_news .swiper-slide:hover .img_box a {
+    opacity: 1;
+}
+.main_news .swiper-slide .caption {
+    padding-top: 30px;
+    cursor: pointer;
+}
+.main_news .swiper-slide .caption .period {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+.main_news .swiper-slide .caption .title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
 }

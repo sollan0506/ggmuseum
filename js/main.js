@@ -10,12 +10,20 @@ $(function(){
     });
 
     var swiperNews = new Swiper('.swiper-container-news', {
+        slidesPerView: 'auto',
         loop: true,
+        spaceBetween: 0,
+        updateOnWindowResize: true,
 
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-news-next',
             prevEl: '.swiper-button-news-prev'
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 16
+            }
         }
     });
 
