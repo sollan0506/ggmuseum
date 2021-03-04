@@ -260,3 +260,104 @@ nav .gnb > li > ul > li > a:hover {
 
 
 /* ***************** footer Area Start ******************** */
+footer {
+    width: 100%;
+    background-color: #303233;
+}
+footer .container {
+    width: 100%;
+    padding: 64px calc(5.2% * 2);
+}
+footer .footer_top {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+}
+footer .logo_links {
+    margin-bottom: 20px;
+}
+footer .logo_box {
+    float: left;
+}
+footer .logo_box > a:first-child {
+    display: inline-block;
+    width: 70px;
+    height: 54px;
+    margin-right: 38px;
+}
+footer .link_box {
+    float: right;
+    padding-top: 30px;
+}
+footer .link_box > a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    padding-right: 40px;
+}
+footer .link_box > a::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+footer .link_box select {
+    height: 34px;
+    background: url(../images/main/btn-btn-profile-down.svg) no-repeat;
+    background-position: right 8px center;
+    background-size: 10px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1px solid #333;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    
+    padding: 0 22px 0 10px;
+}
+footer .link_box select option {
+    color: #000;
+}
+footer .address_sns address {
+    display: block;
+    float: left;
+    font-style: normal;
+    color: #999;
+    line-height: 2;
+}
+footer .address_sns .sns_box {
+    display: flex;
+    float: right;
+    padding-top: 40px;
+}
+footer .address_sns .sns_box a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+footer .address_sns .sns_box a:first-child {
+    background: url(../images/main/ic-facebook-white-32-dp.svg) no-repeat center center;
+    background-size: cover;
+    margin-right: 10px;
+}
+footer .address_sns .sns_box a:last-child {
+    background: url(../images/main/ic-instagram-white-32-dp.svg) no-repeat center center;
+    background-size: cover;
+}
+footer .footer_bottom {
+    padding-top: 24px;
+}
+footer .footer_bottom .copyright {
+    font-weight: bold;
+    color: #999;
+}
