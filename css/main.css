@@ -231,6 +231,21 @@ body {
     left: 0;
     z-index: 10;
 }
+.main_news .bg_ggmuseum {
+    position: absolute;
+    left: 100px;
+    bottom: 12%;
+    width: 1542px;
+    height: 174px;
+    z-index: -1;
+    background: url(../images/main/img-typo-01.svg) no-repeat center;
+    
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
 .main_news .container {
     width: 100%;
     height: 100%;
@@ -394,7 +409,23 @@ body {
 /* ***************** main_relics Area Start ******************** */
 .main_relics {
     position: relative;
+    overflow: hidden;
     padding-bottom: 160px;
+}
+.main_relics .bg_relics {
+    position: absolute;
+    right: -800px;
+    bottom: -52px;
+    width: 1613px;
+    height: 222px;
+    z-index: -1;
+    background: url(../images/main/img-typo-02.svg) no-repeat center;
+    
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 .main_relics .title_container {
     width: 100%;
@@ -587,6 +618,8 @@ body {
 .main_newsletter {
     width: 100%;
     position: relative;
+    background: #fff url(../images/main/nsl_logo.svg) no-repeat right 79px bottom -48px;
+    background-size: 414px auto;
     padding: 48px 0 60px 0;
 }
 .main_newsletter h2 {
