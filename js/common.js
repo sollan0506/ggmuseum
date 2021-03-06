@@ -1,19 +1,40 @@
 $(function(){
 
-    $("nav .gnb > li").hover(
-        function () {
-            // over
-            $(this).children("ul").css("display", "block").animate({"opacity": "1"}, 300);
-        }, function () {
-            // out
-            $(this).children("ul").animate({"opacity": "0"}, 300).css("display", "none");
-        }
-    );
+    var width = window.innerWidth;
 
+    if(width > 768){ //desktop
+        $("nav .gnb > li").hover(
+            function () {
+                // over
+                $(this).find("ul").css("display", "block").animate({"opacity": "1"}, 300);
+            }, function () {
+                // out
+                $(this).find("ul").animate({"opacity": "0"}, 300).css("display", "none");
+            }
+        );
+    } else {
+        // 모바일 메뉴 슬라이드 토글
+        $("nav .gnb > li > a").click(function (e) { 
+            e.preventDefault();
+            $(this).parent().children("ul").slideToggle();
+            $("nav > div").toggleClass("on");
+        });
+    }
+
+    // 햄버거버튼 토글
     $(".gnb_all_btn > a").click(function (e) { 
         $(".gnb_all").toggleClass("on");
         $(this).children("span").toggleClass("on");
         e.preventDefault();
     });
+    $(".gnb_mob_btn > a").click(function (e) {
+        $(this).children("span").toggleClass("on");
+        $("nav").slideToggle();
+        $(".submenu").toggleClass("on");
+        e.preventDefault();
+    });
+
+    
+    
 
 });
