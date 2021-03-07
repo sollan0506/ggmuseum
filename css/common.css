@@ -408,8 +408,13 @@ footer .footer_bottom .copyright {
         height: 56px;
         max-width: 100%;
         min-width: 100%;
-        position: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
         z-index: 100;
+    }
+    header.on {
+        position: fixed;
     }
     header .container {
         padding: 0 16px;

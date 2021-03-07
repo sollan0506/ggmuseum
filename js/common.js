@@ -29,6 +29,7 @@ $(function(){
     });
     $(".gnb_mob_btn > a").click(function (e) {
         $(this).children("span").toggleClass("on");
+        $("header").toggleClass("on");
         $("nav").slideToggle();
         $(".submenu").toggleClass("on");
         e.preventDefault();
