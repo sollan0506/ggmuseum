@@ -837,3 +837,160 @@ section {
     height: 100%;
     background: url(../images/main/ic-angle-up-white-24-dp.svg) no-repeat center center / 10px;
 }
+
+
+
+
+/* ***************** media Query ******************** */
+@media screen and (max-width: 768px) {
+    section {
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+    }
+    
+    /* ******** main_intro ********* */
+    .main_intro .container {
+        padding: 56px 0 0 0;
+    }
+    .main_intro .container .video_box {
+        padding-top: 122%;
+    }
+    .main_intro .video_box .video_box_inner {
+        background: url(../images/main/m_main_visual.png) no-repeat 0 0;
+        background-size: cover;
+    }
+    .main_intro .video_box .video_box_inner video {
+        display: none;
+    }
+    .main_intro .video_box .video_box_inner .video_caption h2 {
+        width: 357px;
+        font-size: 3.6rem;
+        line-height: 1.33;
+        text-align: center;
+        letter-spacing: 3px;
+        word-break: keep-all;
+        margin: 0 auto 12px auto;
+    }
+    .main_intro .video_box .video_box_inner .video_caption a {
+        font-size: 1.4rem;
+        padding: 13px 28px;
+    }
+
+    
+    /* 
+    .main_intro .video_bottom {
+        width: 100%;
+        height: 54px;
+    }
+    .main_intro .video_bottom .today_time {
+        width: 190px;
+        height: 100%;
+        float: left;
+        background-color: #1f5153;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 13px 0 15px 52px;
+        background-image: url(../images/main/ic-time-white-24-dp.svg);
+        background-repeat: no-repeat;
+        background-position: 25px 15px;
+        background-size: 20px;
+    }
+    .main_intro .video_bottom .time_ticket {
+        float: left;
+        display: flex;
+    }
+    .main_intro .video_bottom .time_ticket .today_time2 {
+        height: 100%;
+        font-size: 1.6rem;
+        position: relative;
+        padding: 15px 15px 0 20px;
+    }
+    .main_intro .video_bottom .time_ticket .today_time2::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 13px;
+        background-color: #ccc;
+        position: absolute;
+        top: 22px;
+        right: 0;
+    }
+    .main_intro .video_bottom .time_ticket .ticket {
+        height: 100%;
+        font-size: 1.6rem;
+        position: relative;
+        padding: 15px 0 0 15px;
+    }
+    .main_intro .video_bottom .booking_dir {
+        float: right;
+        display: flex;
+        padding: 15px 20px 0 0;
+    }
+    .main_intro .video_bottom .booking_dir .booking {
+        display: block;
+        color: #f00;
+        font-size: 1.6rem;
+        background-image: url(../images/main/ticket.png);
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+        background-size: 30px;
+        padding: 0 20px 0 40px;
+    }
+    .main_intro .video_bottom .booking_dir .directions {
+        display: block;
+        color: #1f5153;
+        font-size: 1.6rem;
+        background-image: url(../images/main/ic-car-green-24-dp.svg);
+        background-repeat: no-repeat;
+        background-position: 5px 5px;
+        background-size: 20px;
+        padding: 0 0 0 40px;
+    }
+    .main_intro .video_right {
+        width: 11px;
+        height: 250px;
+        position: absolute;
+        right: 2.5%;
+        bottom: 54px;
+    }
+    .main_intro .video_right > span {
+        display: block;
+        width: 1px;
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+        margin: 10px 0 0 3px;
+    }
+    .main_intro .video_right > span::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 120px;
+        background-color: #000;
+        position: absolute;
+        top: -120px;
+        left: 0;
+    
+        -webkit-animation-name: scroll_line;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+    
+        -moz-animation-name: scroll_line;
+        -moz-animation-duration: 2s;
+        -moz-animation-iteration-count: infinite;
+    
+        -o-animation-name: scroll_line;
+        -o-animation-duration: 2s;
+        -o-animation-iteration-count: infinite;
+    
+        -ms-animation-name: scroll_line;
+        -ms-animation-duration: 2s;
+        -ms-animation-iteration-count: infinite;
+    
+        animation-name: scroll_line;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    } */
+}
