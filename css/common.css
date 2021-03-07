@@ -404,6 +404,8 @@ footer .footer_bottom .copyright {
 
 /* ****************** media Query **********************/
 @media screen and (max-width: 768px){
+
+    /* ********* header ********* */
     header {
         height: 56px;
         max-width: 100%;
@@ -593,5 +595,102 @@ footer .footer_bottom .copyright {
         width: 23px;
         transform-origin: 0% 100%;
         transform: rotate( -45deg );
+    }
+
+
+
+
+    /* ********* footer ********* */
+    footer {
+        padding: 28px 0;
+    }
+    footer .container {
+        padding: 0 16px;
+    }
+    footer .footer_top {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+    footer .logo_links {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    footer .logo_box {
+        display: none;
+        float: none;
+    }
+    footer .link_box {
+        display: inline-block;
+        float: none;
+        padding-top: 0;
+    }
+    footer .link_box > a {
+        font-size: 1.2rem;
+        padding-right: 16px;
+    }
+    footer .link_box > a::after {
+        height: 10px;
+        top: 5px;
+        right: 8px;
+    }
+    footer .link_box > a:nth-child(4) {
+        padding-right: 0;
+    }
+    footer .link_box > a:nth-child(4)::after {
+        display: none;
+    }
+    footer .link_box select {
+        display: block;
+        height: 30px;
+        background: url(../images/main/btn-btn-profile-down.svg) no-repeat;
+        background-position: right 8px center;
+        background-size: 8px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: 1px solid #bdbdbd;
+        /* position: relative; */
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        
+        padding: 0 22px 0 10px;
+        margin: 10px auto;
+    }
+    footer .address_sns {
+        margin-bottom: 10px;
+    }
+    footer .address_sns address {
+        display: block;
+        float: none;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+        word-break: keep-all;
+        margin-bottom: 10px;
+    }
+    footer .address_sns .sns_box {
+        display: block;
+        float: none;
+        padding-top: 0;
+        text-align: center;
+    }
+    footer .address_sns .sns_box a {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    footer .address_sns .sns_box a:first-child {
+        margin-right: 20px;
+    }
+    footer .footer_bottom {
+        text-align: center;
+        padding-top: 0;
+    }
+    footer .footer_bottom .copyright {
+        font-size: 1.2rem;
     }
 }
