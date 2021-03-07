@@ -16,6 +16,7 @@ $(function(){
         // 모바일 메뉴 슬라이드 토글
         $("nav .gnb > li > a").click(function (e) { 
             e.preventDefault();
+            $(this).toggleClass("on");
             $(this).parent().children("ul").slideToggle();
             $("nav > div").toggleClass("on");
         });

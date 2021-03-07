@@ -488,6 +488,13 @@ footer .footer_bottom .copyright {
         -o-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in;
     }
+    nav .gnb > li > a.on::after {
+        -webkit-transform: translateY(-50%) rotate( -180deg );
+        -moz-transform: translateY(-50%) rotate( -180deg );
+        -o-transform: translateY(-50%) rotate( -180deg );
+        -ms-transform: translateY(-50%) rotate( -180deg );
+        transform: translateY(-50%) rotate( -180deg );
+    }
     nav .gnb > li > ul {
         display: none;
         width: 100%;
