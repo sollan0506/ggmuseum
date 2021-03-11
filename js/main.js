@@ -2,11 +2,11 @@ $(function(){
 
     // swiper init
     var swiperNotice = new Swiper('.swiper-container-notice', {
-        loop: true,
         direction: 'vertical',
-        autoplay: {
-            delay: 3000
-        }
+        autoplay:true,
+        loop: true,
+        speed: 400,
+        height: 72
     });
 
     var swiperNews = new Swiper('.swiper-container-news', {
@@ -14,6 +14,7 @@ $(function(){
         loop: true,
         spaceBetween: 0,
         updateOnWindowResize: true,
+        centeredSlides:true,
 
         // Navigation arrows
         navigation: {
