@@ -7,11 +7,6 @@ body {
     position: relative;
 }
 
-section {
-    max-width: 2200px;
-    min-width: 1383px;
-    margin: 0 auto;
-}
 
 
 
@@ -722,51 +717,6 @@ section {
 
 
 
-/* ***************** main_newsletter Area Start ******************** */
-.main_newsletter {
-    width: 100%;
-    position: relative;
-    background: #fff url(../images/main/nsl_logo.svg) no-repeat right 79px bottom -48px;
-    background-size: 414px auto;
-    padding: 48px 0 60px 0;
-}
-.main_newsletter h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 6px;
-}
-.main_newsletter p {
-    font-size: 1.6rem;
-    text-align: center;
-    margin-bottom: 22px;
-}
-.main_newsletter form {
-    text-align: center;
-}
-.main_newsletter form input:first-child {
-    display: inline-block;
-    width: 320px;
-    height: 44px;
-    font-size: 1.6rem;
-    border: 1px solid #ccc;
-    color: #333;
-    padding: 0 24px;
-    margin-right: -4px;
-}
-.main_newsletter form input:last-child {
-    display: inline-block;
-    width: 108px;
-    height: 44px;
-    color: #fff;
-    background-color: #1f5153;
-    border: 1px solid #1f5153;
-    font-weight: 700;
-    text-align: center;
-}
-
-
-
 
 /* ***************** 후원하기, 맨위로버튼 ******************** */
 /* donate_btn */
@@ -1148,46 +1098,6 @@ section {
         background: url(../images/main/ic-arrow-right-white-24-dp.svg) no-repeat center center;
         background-size: 15px;
         margin: 0 auto;
-    }
-
-
-    
-    
-    /* ******** main_newsletter ********* */
-
-    .main_newsletter {
-        text-align: center;
-        border-top: 1px solid #f0f0f0;
-        background: #fff url(../images/main/nsl_logo.svg) no-repeat right -12px bottom -9px;
-        background-size: 207px auto;
-        padding: 20px 24px 32px;
-    }
-    .main_newsletter h2 {
-        font-size: 2.1rem;
-        margin-bottom: 10px;
-    }
-    .main_newsletter p {
-        font-size: 1.4rem;
-        line-height: 1.7;
-    }
-    .main_newsletter p > span {
-        display: block;
-    }
-    .main_newsletter form {
-        margin-top: 20px;
-    }
-    .main_newsletter form input:first-child {
-        width: calc(100% - 88px);
-        height: 40px;
-        font-size: 1.4rem;
-        border: 1px solid #e0e0e0;
-        padding: 0 20px;
-    }
-    .main_newsletter form input:last-child {
-        width: 88px;
-        height: 40px;
-        font-size: 1.2rem;
-        padding: 12px 0;
     }
 
 

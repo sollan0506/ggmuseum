@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기도 박물관</title>
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="main.html">
+                    <img src="../images/main/logo.svg" alt="경기도박물관 로고">
+                </a>
+            </h1>
+
+            <nav>
+                <div>
+                    <ul class="gnb clearfix">
+                        <li>
+                            <a href="admission.html">이용안내</a>
+                            <ul>
+                                <li><a href="#">관람안내</a></li>
+                                <li><a href="#">사전관람예약</a></li>
+                                <li><a href="#">층별안내</a></li>
+                                <li><a href="#">시설안내</a></li>
+                                <li><a href="#">대관안내</a></li>
+                                <li><a href="#">기증안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="exhibition.html">전시</a>
+                            <ul>
+                                <li><a href="#">전시</a></li>
+                                <li><a href="#">아카이브</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="education.html">교육</a>
+                            <ul>
+                                <li><a href="#">전체보기</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">성인</a></li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">사회복지</a></li>
+                                <li><a href="#">동호회</a></li>
+                                <li><a href="#">문화행사</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="notice.html">소식</a>
+                            <ul>
+                                <li><a href="#">공고 · 공지</a></li>
+                                <li><a href="#">박물관 새소식</a></li>
+                                <li><a href="#">뉴스레터</a></li>
+                                <li><a href="#">관장과의 대화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="relics.html">유물</a>
+                            <ul>
+                                <li><a href="#">소장유물</a></li>
+                                <li><a href="#">기증자 현황</a></li>
+                                <li><a href="#">유물열람 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="introduce.html">박물관</a>
+                            <ul>
+                                <li><a href="#">박물관 소개</a></li>
+                                <li><a href="#">뮤지엄파크 소개</a></li>
+                                <li><a href="#">미션과 비전</a></li>
+                                <li><a href="#">MI</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">박물관직원</a></li>
+                                <li><a href="#">청소년자원봉사</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="mob_booking_btn">사전관람 예약하기</a>
+                </div>
+                
+                <ul class="submenu clearfix">
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">Q&amp;A</a></li>
+                    <li><a href="#">MEMBERS</a></li>
+                    <li>
+                        <select name="select_lang" id="selectLang">
+                            <option value="">한국어</option>
+                            <option value="">ENGLISH</option>
+                            <option value="">中文</option>
+                            <option value="">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="gnb_all_btn">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="gnb_mob_btn">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- gnb_all Area Start -->
+        <div class="gnb_all">
+            <div class="gnb_all_top">
+                <a href="main.html">
+                    <img src="../images/main/logo.svg" alt="경기도박물관 로고">
+                </a>
+            </div>
+            <div class="gnb_all_bottom">
+                <nav class="clearfix">
+                    <ul>
+                        <li>이용안내</li>
+                        <li><a href="admission.html">관람안내</a></li>
+                        <li><a href="#">사전관람예약</a></li>
+                        <li><a href="#">층별안내</a></li>
+                        <li><a href="#">시설안내</a></li>
+                        <li><a href="#">대관안내</a></li>
+                        <li><a href="#">기증안내</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                    <ul>
+                        <li>전시</li>
+                        <li><a href="exhibition.html">전시</a></li>
+                        <li><a href="#">아카이브</a></li>
+                    </ul>
+                    <ul>
+                        <li>교육</li>
+                        <li><a href="education.html">전체보기</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">청소년</a></li>
+                        <li><a href="#">성인</a></li>
+                        <li><a href="#">사회복지</a></li>
+                        <li><a href="#">동호회</a></li>
+                        <li><a href="#">문화행사</a></li>
+                    </ul>
+                    <ul>
+                        <li>소식</li>
+                        <li><a href="notice.html">공고 · 소식</a></li>
+                        <li><a href="#">박물관 새소식</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#">관장과의 대화</a></li>
+                    </ul>
+                    <ul>
+                        <li>유물</li>
+                        <li><a href="relics.html">소장유물</a></li>
+                        <li><a href="#">기증자 현황</a></li>
+                        <li><a href="#">유물열람 안내</a></li>
+                    </ul>
+                    <ul>
+                        <li>박물관</li>
+                        <li><a href="introduce.html">박물관 소개</a></li>
+                        <li><a href="#">뮤지엄파크 소개</a></li>
+                        <li><a href="#">미션과 비전</a></li>
+                        <li><a href="#">MI</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">박물관직원</a></li>
+                        <li><a href="#">청소년자원봉사</a></li>
+                    </ul>
+                    <ul>
+                        <li>기타</li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">청소년 자원봉사</a></li>
+                        <li><a href="#">지지씨멤버스</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!-- gnb_all Area End -->
+    </header>
+    
+    <!-- contents_wrap Area Start -->
+    <section class="contents_wrap">
+
+        <!-- sub_nav Area Start -->
+        <nav class="sub_nav">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="main.html"></a>
+                    </li>
+                    <li>
+                        이용안내
+                        <ul>
+                            <li><a href="admission.html">이용안내</a></li>
+                            <li><a href="#">전시</a></li>
+                            <li><a href="#">교육</a></li>
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">유물</a></li>
+                            <li><a href="#">박물관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        관람안내
+                        <ul>
+                            <li><a href="admission.html">관람안내</a></li>
+                            <li><a href="#">사전관람예약</a></li>
+                            <li><a href="#">시설안내</a></li>
+                            <li><a href="#">층별안내</a></li>
+                            <li><a href="#">대관안내</a></li>
+                            <li><a href="#">기증안내</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="container_mob">
+                <ul>
+                    <li><a href="admission.html">관람안내</a></li>
+                    <li><a href="#">사전관람예약</a></li>
+                    <li><a href="#">시설안내</a></li>
+                    <li><a href="#">층별안내</a></li>
+                    <li><a href="#">대관안내</a></li>
+                    <li><a href="#">기증안내</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="contents">
+            <div class="container">
+                <div class="bg_txt"></div>
+                <h2>관람안내</h2>
+
+                <h3>관람시간</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>1월 - 6월 / 9월 - 12월</th>
+                            <th>7월 - 8월</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>관람시간</th>
+                            <td>
+                                10:00 - 18:00<br>
+                                (코로나-19 상황 조치에 따른 17:30까지 운영)
+                            </td>
+                            <td>
+                                10:00 - 19:00<br>
+                                (코로나-19 상황 조치에 따른 18:00까지 운영)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴관일</th>
+                            <td colspan="2">매주 월요일, 매년 1월1일, 설날 및 추석 당일</td>
+                        </tr>
+                        <tr>
+                            <th>관람료</th>
+                            <td colspan="2">무료</td>
+                        </tr>
+                        <tr>
+                            <th>안내사항</th>
+                            <td colspan="2">전시 관람을 위한 박물관 입장은 폐관으로부터 1시간 전까지 가능합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>
+                    운영시간<span>(코로나-19 방역조치에 따른 한시적 운영)</span>
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>관람시간</th>
+                            <th>환기시간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1회차</th>
+                            <td>10시 ~ 11시 30분</td>
+                            <td>11시 30분~12시</td>
+                        </tr>
+                        <tr>
+                            <th>2회차</th>
+                            <td>12시 ~ 13시 30분</td>
+                            <td>13시 30분~14시</td>
+                        </tr>
+                        <tr>
+                            <th>3회차</th>
+                            <td>14시 ~ 15시 30분</td>
+                            <td>15시 30분~16시</td>
+                        </tr>
+                        <tr>
+                            <th>4회차</th>
+                            <td>16시 ~ 17시 30분</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul>
+                    <li>회차당 50명 입장/재입장 불가</li>
+                    <li>입장 마감 시간 : 매 회차 종료 1시간 전</li>
+                    <li>개인관람만 가능 (개인 최대 5명이하)</li>
+                    <li>100% 온라인 예약 및 QR코드 전자출입명부 작성필수</li>
+                </ul>
+                <div class="booking">
+                    <a href="#">사전관람 예약하기</a>
+                </div>
+
+                <h3>정기 도슨트 프로그램</h3>
+                <div class="deco_txt">※ 코로나-19로 인해 잠시 중단합니다.</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>1회</th>
+                            <th>2회</th>
+                            <th>3회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>안내시간</th>
+                            <td>10:30</td>
+                            <td>13:00</td>
+                            <td>15:00</td>
+                        </tr>
+                        <tr>
+                            <th>인원 / 시간	</th>
+                            <td colspan="3">40분 내외 소요 / 30명 이내</td>
+                        </tr>
+                        <tr>
+                            <th>참가방법</th>
+                            <td colspan="3">별도 신청 없이 지정시간에 안내데스크 앞에 모여 진행</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>관람 시 유의사항</h3>
+                <ul>
+                    <li>음식물 반입과 안내견 이외의 애완동물의 출입은 금지되어 있습니다.</li>
+                    <li>전시실 입장 전에, 휴대전화는 전원을 꺼주시거나 진동으로 전환하여 주십시오.</li>
+                    <li>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 절대 삼가해 주십시오.</li>
+                    <li>플래시/삼각대 등을 이용한 촬영과 상업적 용도를 위한 촬영은 금지되어 있습니다.</li>
+                    <li>야외 관람로에서는 자전거, 킥보드, 인라인스케이트, 브레이드 등을 이용할 수 없습니다.</li>
+                </ul>
+
+            </div><!-- container End -->
+        </div><!-- contents End -->
+    </section>
+    
+
+
+    <!-- main_newsletter Area Start -->
+    <section class="main_newsletter">
+        <h2>뉴스레터</h2>
+        <p>
+            <span>박물관의 새로운 소식을 받으시려면</span>
+            <span>뉴스레터에 가입해 주세요</span>
+        </p>
+        <form action="">
+            <input type="email" placeholder="이메일을 입력해주세요.">
+            <input type="submit" value="구독하기">
+        </form>
+    </section><!-- main_newsletter Area End -->
+
+
+    <!-- footer Area Start -->
+    <footer>
+        <div class="container">
+            <div class="footer_top">
+                <div class="logo_links clearfix">
+                    <div class="logo_box">
+                        <a href="#">
+                            <img src="../images/main/logo-white.svg" alt="경기도박물관 로고">
+                        </a>
+                        <a href="#">
+                            <img src="../images/main/logo-ggcf.svg" alt="경기문화재단 로고">
+                        </a>
+                    </div>
+                    <div class="link_box">
+                        <a href="#">개인정보취급방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">행정정보공개</a>
+                        <a href="#">클린신고센터</a>
+                        <select class="family_site" name="family_site" id="familySite" onchange="if(this.value) window.open(this.value);">
+                            <option value="" disabled selected hidden>family sites</option>
+                            <option value="http://www.ggcf.kr">경기문화재단</option>
+                            <option value="http://gmoma.ggcf.kr/">경기도미술관</option>
+                            <option value="http://njp.ggcf.kr/">백남준아트센터</option>
+                            <option value="http://silhak.ggcf.kr/">실학박물관</option>
+                            <option value="http://jgpm.ggcf.kr/">전곡선사박물관</option>
+                            <option value="http://gcm.ggcf.kr/">경기도어린이박물관</option>
+                            <option value="https://ngcm.ggcf.kr/">경기북부어린이박물관</option>
+                            <option value="http://gjicp.ggcf.kr/">경기문화재연구원</option>
+                            <option value="http://sscampus.kr">경기상상캠퍼스</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="address_sns clearfix">
+                    <address>
+                        (재)경기문화재단 경기도박물관 / (17072) 경기도 용인시 기흥구 상갈로 6 (상갈동)<br>
+                        대표전화 031-288-5300 / 관람안내 031-288-5400 / FAX: 031-288-5339<br>
+                        사업자등록번호 : 142-82-01158 / 대표이사 : 강헌
+                    </address>
+                    <div class="sns_box">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="copyright">
+                    © Copyright GGCF. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer><!-- footer Area End -->
+
+
+
+    
+    <!-- jquery JS -->
+    <script src='http://code.jquery.com/jquery-3.5.1.min.js'></script>
+
+    <!-- my JS -->
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+
+</body>
+</html>

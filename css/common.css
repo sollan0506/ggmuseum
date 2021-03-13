@@ -7,6 +7,13 @@ select::-ms-expand {
 }
 
 
+section {
+    max-width: 2200px;
+    min-width: 1383px;
+    margin: 0 auto;
+}
+
+
 /* 개별영역 선언시작 */
 /* ***************** header Area Start ******************** */
 header {
@@ -16,7 +23,7 @@ header {
     min-width: 1383px;
     background-color: #fff;
     position: relative;
-    z-index: 10;
+    z-index: 100;
     margin: 0 auto;
 }
 header .container {
@@ -39,7 +46,7 @@ header .logo a img {
     height: 100%;
 }
 /* nav */
-nav {
+header nav {
     width: 40%;
     height: 100%;
     position: absolute; 
@@ -51,21 +58,21 @@ nav {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-nav > div {
+header nav > div {
     width: 100%;
     height: 100%;
 }
-nav .gnb {
+header nav .gnb {
     width: 100%;
     height: 100%;
 }
-nav .gnb > li {
+header nav .gnb > li {
     width: calc(100% / 6 - 2%);
     height: 100%;
     float: left;
     position: relative;
 }
-nav .gnb > li > a {
+header nav .gnb > li > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -74,10 +81,10 @@ nav .gnb > li > a {
     font-weight: 500;
     padding-top: 40px;
 }
-nav .gnb > li > a:hover {
+header nav .gnb > li > a:hover {
     color: #1f5153;
 }
-nav .gnb > li > ul {
+header nav .gnb > li > ul {
     display: none;
     width: 180px;
     opacity: 0;
@@ -91,11 +98,11 @@ nav .gnb > li > ul {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-nav .gnb > li > ul > li {
+header nav .gnb > li > ul > li {
     width: 100%;
     border-top: 1px solid #f0f0f0;
 }
-nav .gnb > li > ul > li > a {
+header nav .gnb > li > ul > li > a {
     display: block;
     font-size: 1.6rem;
 
@@ -107,12 +114,12 @@ nav .gnb > li > ul > li > a {
     
     padding: 20px 24px;
 }
-nav .gnb > li > ul > li > a:hover {
+header nav .gnb > li > ul > li > a:hover {
     background-color: #1f5153;
     color: #fff;
 }
 /* mob_booking_btn */
-nav .mob_booking_btn {
+header nav .mob_booking_btn {
     display: none;
 }
 /* submenu */
@@ -296,6 +303,120 @@ nav .mob_booking_btn {
 
 
 
+/* ***************** sub_nav Area Start ******************** */
+.contents_wrap {
+    position: relative;
+}
+.contents_wrap .sub_nav {
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.contents_wrap .sub_nav .container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.contents_wrap .sub_nav .container > ul > li {
+    height: 50px;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    position: relative;
+}
+.contents_wrap .sub_nav .container > ul > li:first-child {
+    width: 50px;
+    border-left: 1px solid #eaeaea;
+    background: url(../images/sub/ic-home-black-18-dp.svg) no-repeat center center / 15px;
+}
+.contents_wrap .sub_nav .container > ul > li:nth-child(2),
+.contents_wrap .sub_nav .container > ul > li:nth-child(3) {
+    width: 165px;
+    background: url(../images/sub/ic-dropdown-black-12-dp.svg) no-repeat right 15px center / 8px;
+    cursor: pointer;
+    padding: 15px;
+}
+.contents_wrap .sub_nav .container > ul ul {
+    display: none;
+    width: calc(100% + 1px);
+    border: 1px solid #eaeaea;
+    border-top: none;
+    background: #fff;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    padding: 8px 0;
+}
+.contents_wrap .sub_nav .container > ul ul > li > a {
+    display: block;
+    color: #999;
+    padding: 8px 15px;
+}
+.contents_wrap .sub_nav .container > ul ul > li:first-child > a {
+    color: #1f5153;
+}
+.contents_wrap .sub_nav .container > ul ul > li > a:hover {
+    color: #1f5153;
+}
+.contents_wrap .sub_nav .container_mob {
+    display: none;
+}
+
+
+
+
+/* ***************** main_newsletter Area Start ******************** */
+.main_newsletter {
+    width: 100%;
+    position: relative;
+    background: #fff url(../images/main/nsl_logo.svg) no-repeat right 79px bottom -48px;
+    background-size: 414px auto;
+    border-top: 1px solid #ccc;
+    padding: 48px 0 60px 0;
+}
+.main_newsletter h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.main_newsletter p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.main_newsletter form {
+    text-align: center;
+}
+.main_newsletter form input:first-child {
+    display: inline-block;
+    width: 320px;
+    height: 44px;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 0 24px;
+    margin-right: -4px;
+}
+.main_newsletter form input:last-child {
+    display: inline-block;
+    width: 108px;
+    height: 44px;
+    color: #fff;
+    background-color: #1f5153;
+    border: 1px solid #1f5153;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
 /* ***************** footer Area Start ******************** */
 footer {
     width: 100%;
@@ -427,7 +548,7 @@ footer .footer_bottom .copyright {
         margin: 11px 0;
     }
     /* nav */
-    nav {
+    header nav {
         display: none;
         width: 100%;
         height: calc(100% - 56px + 1px);
@@ -445,31 +566,31 @@ footer .footer_bottom .copyright {
         -o-transform: translateX(0);
         transform: translateX(0);
     }
-    nav > div {
+    header nav > div {
         height: calc(100% - 77px - 50px);
     }
-    nav > div.on {
+    header nav > div.on {
         height: auto;
     }
-    nav .gnb {
+    header nav .gnb {
         height: auto;
     }
-    nav .gnb > li {
+    header nav .gnb > li {
         width: 100%;
         height: auto;
         float: none;
     }
-    nav .gnb > li > a {
+    header nav .gnb > li > a {
         height: auto;
         text-align: left;
         border-bottom: 1px solid #f0f0f0;
         position: relative;
         padding: 18px 16px;
     }
-    nav .gnb > li > a:hover {
+    header nav .gnb > li > a:hover {
         color: #000;
     }
-    nav .gnb > li > a::after {
+    header nav .gnb > li > a::after {
         content: '';
         display: block;
         width: 24px;
@@ -490,14 +611,14 @@ footer .footer_bottom .copyright {
         -o-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in;
     }
-    nav .gnb > li > a.on::after {
+    header nav .gnb > li > a.on::after {
         -webkit-transform: translateY(-50%) rotate( -180deg );
         -moz-transform: translateY(-50%) rotate( -180deg );
         -o-transform: translateY(-50%) rotate( -180deg );
         -ms-transform: translateY(-50%) rotate( -180deg );
         transform: translateY(-50%) rotate( -180deg );
     }
-    nav .gnb > li > ul {
+    header nav .gnb > li > ul {
         display: none;
         width: 100%;
         opacity: 1;
@@ -512,18 +633,18 @@ footer .footer_bottom .copyright {
         transform: translateX(0);
         padding: 14px 32px;
     }
-    nav .gnb > li > ul > li {
+    header nav .gnb > li > ul > li {
         border-top: none;
     }
-    nav .gnb > li > ul > li > a {
+    header nav .gnb > li > ul > li > a {
         padding: 10px 0;
     }
-    nav .gnb > li > ul > li > a:hover {
+    header nav .gnb > li > ul > li > a:hover {
         background-color: rgba(0, 0, 0, 0);
         color: #000;
     }
     /* mob_booking_btn */
-    nav .mob_booking_btn {
+    header nav .mob_booking_btn {
         display: block;
         width: 200px;
         text-align: center;
@@ -596,7 +717,45 @@ footer .footer_bottom .copyright {
         transform-origin: 0% 100%;
         transform: rotate( -45deg );
     }
+    
 
+    
+    
+    /* ******** main_newsletter ********* */
+    .main_newsletter {
+        text-align: center;
+        border-top: 1px solid #f0f0f0;
+        background: #fff url(../images/main/nsl_logo.svg) no-repeat right -12px bottom -9px;
+        background-size: 207px auto;
+        padding: 20px 24px 32px;
+    }
+    .main_newsletter h2 {
+        font-size: 2.1rem;
+        margin-bottom: 10px;
+    }
+    .main_newsletter p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+    .main_newsletter p > span {
+        display: block;
+    }
+    .main_newsletter form {
+        margin-top: 20px;
+    }
+    .main_newsletter form input:first-child {
+        width: calc(100% - 88px);
+        height: 40px;
+        font-size: 1.4rem;
+        border: 1px solid #e0e0e0;
+        padding: 0 20px;
+    }
+    .main_newsletter form input:last-child {
+        width: 88px;
+        height: 40px;
+        font-size: 1.2rem;
+        padding: 12px 0;
+    }
 
 
 
