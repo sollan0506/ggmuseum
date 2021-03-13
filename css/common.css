@@ -349,7 +349,6 @@ header nav .mob_booking_btn {
     top: 51px;
     left: 0;
     z-index: 1;
-    opacity: 0;
     padding: 8px 0;
 }
 .contents_wrap .sub_nav .container > ul ul > li > a {

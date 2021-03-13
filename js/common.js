@@ -40,16 +40,16 @@ $(function(){
     // sub_nav hover
     $(".contents_wrap .sub_nav .container > ul > li:nth-child(2)").hover(
         function () {
-            $(this).children("ul").css("display", "block").stop().animate({"opacity" : "1"}, 300);
+            $(this).children("ul").stop().fadeIn(300);
         }, function () {
-            $(this).children("ul").stop().animate({"opacity" : "0"}, 300).css("display", "block");
+            $(this).children("ul").stop().fadeOut(300);
         }
     );
     $(".contents_wrap .sub_nav .container > ul > li:nth-child(3)").hover(
         function () {
-            $(this).children("ul").css("display", "block").stop().animate({"opacity" : "1"}, 300);
+            $(this).children("ul").stop().fadeIn(300);
         }, function () {
-            $(this).children("ul").stop().animate({"opacity" : "0"}, 300).css("display", "block");
+            $(this).children("ul").stop().fadeOut(300);
         }
     );
     
