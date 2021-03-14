@@ -317,6 +317,12 @@ header nav .mob_booking_btn {
     left: 0;
     z-index: 10;
 }
+.contents_wrap .sub_nav.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 .contents_wrap .sub_nav .container {
     width: 1280px;
     margin: 0 auto;

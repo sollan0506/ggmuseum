@@ -3,3 +3,203 @@
 
 
 
+/* *************** contents_wrap Area Start **************** */
+.contents_wrap {
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 0;
+}
+/* contents */
+.contents_wrap .contents .container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.contents_wrap .contents .container .bg_txt {
+    height: 174px;
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    z-index: -1;
+
+    -webkit-animation: bgTxtMove 1.2s ease-out 0.3s forwards;
+    -moz-animation: bgTxtMove 1.2s ease-out 0.3s forwards;
+    -o-animation: bgTxtMove 1.2s ease-out 0.3s forwards;
+    -ms-animation: bgTxtMove 1.2s ease-out 0.3s forwards;
+    animation: bgTxtMove 1.2s ease-out 0.3s forwards;
+}
+.contents_wrap .contents .container .bg_txt.guide {
+    width: 773px;
+    background: url(../images/sub/guide.svg) no-repeat center;
+}
+.contents_wrap .contents h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 120px 0 80px;
+}
+.contents_wrap .contents h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.contents_wrap .contents h3 .red {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #f00;
+}
+.contents_wrap .contents table {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #000;
+    margin-bottom: 52px;
+}
+.contents_wrap .contents table tr,
+.contents_wrap .contents table th,
+.contents_wrap .contents table td {
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 0;
+    vertical-align: middle;
+}
+.contents_wrap .contents table thead th {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+.contents_wrap .contents table thead th:first-child {
+    width: 20%;
+    border-left: none;
+}
+.contents_wrap .contents table thead th:nth-child(2),
+.contents_wrap .contents table thead th:last-child {
+    width: 40%;
+}
+.contents_wrap .contents table thead th:last-child {
+    border-right: none;
+}
+.contents_wrap .contents table tbody th,
+.contents_wrap .contents table tbody td {
+    border: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+.contents_wrap .contents table tbody th {
+    border-left: none;
+}
+.contents_wrap .contents table tbody td {
+    text-align: center;
+    color: #666;
+}
+.contents_wrap .contents table tbody td:last-child {
+    border-right: none;
+}
+.contents_wrap .contents table tbody td .strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.contents_wrap .contents table tbody td .red {
+    color: #f00;
+}
+.contents_wrap .contents table.three thead th:first-child {
+    width: 19%;
+}
+.contents_wrap .contents table.three thead th:nth-child(2) {
+    width: 27%;
+}
+.contents_wrap .contents table.three thead th:nth-child(3) {
+    width: 27%;
+}
+.contents_wrap .contents table.three thead th:nth-child(4) {
+    width: 27%;
+}
+.contents_wrap .contents ul li {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-indent: -15px;
+    padding-left: 17px;
+    margin-bottom: 5px;
+}
+.contents_wrap .contents ul li::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #1f5153;
+    vertical-align: 5px;
+    margin-right: 10px;
+}
+.contents_wrap .contents .booking {
+    text-align: center;
+    margin: 50px 0;
+}
+.contents_wrap .contents .booking a {
+    font-size: 1.6rem;
+    border: 1px solid #1f5153;
+    background-color: #fff;
+    padding: 15px 32px;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.contents_wrap .contents .booking a:hover {
+    background-color: #1f5153;
+    color: #fff;
+}
+.contents_wrap .contents .title_red {
+    font-size: 1.4rem;
+    color: #f00;
+    margin-bottom: 18px;
+}
+.contents_wrap .contents ul.last {
+    margin-bottom: 140px;
+}
+
+
+
+
+/* ************************* 애니메이션 **************************** */
+@-webkit-keyframes bgTxtMove {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% - 100px);
+    }
+}
+@-moz-keyframes bgTxtMove {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% - 100px);
+    }
+}
+@-o-keyframes bgTxtMove {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% - 100px);
+    }
+}
+@-ms-keyframes bgTxtMove {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% - 100px);
+    }
+}
+@keyframes bgTxtMove {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% + 100px);
+    }
+}
