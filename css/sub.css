@@ -4,11 +4,6 @@
 
 
 /* *************** contents_wrap Area Start **************** */
-.contents_wrap {
-    position: relative;
-    overflow-x: hidden;
-    padding-top: 0;
-}
 /* contents */
 .contents_wrap .contents .container {
     width: 1280px;

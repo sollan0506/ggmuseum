@@ -52,13 +52,11 @@ $(function(){
         var scrolled = $(window).scrollTop();
         var headerHeight = $("header").height();
 
-        if(width > 768){ //desktop
-            // 스크롤이 header보다 아래로 내려가면 sub_nav 고정
-            if(scrolled > headerHeight) {
-                $(".contents_wrap .sub_nav").addClass("on");
-            } else {
-                $(".contents_wrap .sub_nav").removeClass("on");
-            }
+        // 스크롤이 header보다 아래로 내려가면 sub_nav 고정
+        if(scrolled > headerHeight) {
+            $(".contents_wrap .sub_nav").addClass("on");
+        } else {
+            $(".contents_wrap .sub_nav").removeClass("on");
         }
     });
     
