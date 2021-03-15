@@ -3,8 +3,10 @@
 
 
 
-/* *************** contents_wrap Area Start **************** */
-/* contents */
+section {
+    max-width: 100%;
+    min-width: 0;
+}
 .contents_wrap .contents .container {
     width: 1280px;
     margin: 0 auto;
@@ -22,92 +24,96 @@
     -ms-animation: bgTxtMove 1.2s ease-out 0.3s forwards;
     animation: bgTxtMove 1.2s ease-out 0.3s forwards;
 }
+
+
+
+/* *************** admission Area Start **************** */
 .contents_wrap .contents .container .bg_txt.guide {
     width: 773px;
     background: url(../images/sub/guide.svg) no-repeat center;
 }
-.contents_wrap .contents h2 {
+.contents_wrap .contents .admission h2 {
     font-size: 6rem;
     font-weight: 700;
     text-align: center;
     letter-spacing: 5px;
     padding: 120px 0 80px;
 }
-.contents_wrap .contents h3 {
+.contents_wrap .contents .admission h3 {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 18px;
 }
-.contents_wrap .contents h3 .red {
+.contents_wrap .contents .admission h3 .red {
     font-size: 1.4rem;
     font-weight: 400;
     color: #f00;
 }
-.contents_wrap .contents table {
+.contents_wrap .contents .admission table {
     width: 100%;
     border: 0;
     border-top: 2px solid #000;
     margin-bottom: 52px;
 }
-.contents_wrap .contents table tr,
-.contents_wrap .contents table th,
-.contents_wrap .contents table td {
+.contents_wrap .contents .admission table tr,
+.contents_wrap .contents .admission table th,
+.contents_wrap .contents .admission table td {
     font-size: 1.6rem;
     font-weight: 400;
     border: 0;
     vertical-align: middle;
 }
-.contents_wrap .contents table thead th {
+.contents_wrap .contents .admission table thead th {
     background-color: #f8f9fa;
     border: 1px solid #e0e0e0;
     padding: 20px 0;
 }
-.contents_wrap .contents table thead th:first-child {
+.contents_wrap .contents .admission table thead th:first-child {
     width: 20%;
     border-left: none;
 }
-.contents_wrap .contents table thead th:nth-child(2),
-.contents_wrap .contents table thead th:last-child {
+.contents_wrap .contents .admission table thead th:nth-child(2),
+.contents_wrap .contents .admission table thead th:last-child {
     width: 40%;
 }
-.contents_wrap .contents table thead th:last-child {
+.contents_wrap .contents .admission table thead th:last-child {
     border-right: none;
 }
-.contents_wrap .contents table tbody th,
-.contents_wrap .contents table tbody td {
+.contents_wrap .contents .admission table tbody th,
+.contents_wrap .contents .admission table tbody td {
     border: 1px solid #e0e0e0;
     padding: 20px 0;
 }
-.contents_wrap .contents table tbody th {
+.contents_wrap .contents .admission table tbody th {
     border-left: none;
 }
-.contents_wrap .contents table tbody td {
+.contents_wrap .contents .admission table tbody td {
     text-align: center;
     color: #666;
 }
-.contents_wrap .contents table tbody td:last-child {
+.contents_wrap .contents .admission table tbody td:last-child {
     border-right: none;
 }
-.contents_wrap .contents table tbody td .strong {
+.contents_wrap .contents .admission table tbody td .strong {
     font-size: 1.8rem;
     font-weight: 700;
 }
-.contents_wrap .contents table tbody td .red {
+.contents_wrap .contents .admission table tbody td .red {
     color: #f00;
 }
-.contents_wrap .contents table.three thead th:first-child {
+.contents_wrap .contents .admission table.three thead th:first-child {
     width: 19%;
 }
-.contents_wrap .contents table.three thead th:nth-child(2) {
+.contents_wrap .contents .admission table.three thead th:nth-child(2) {
     width: 27%;
 }
-.contents_wrap .contents table.three thead th:nth-child(3) {
+.contents_wrap .contents .admission table.three thead th:nth-child(3) {
     width: 27%;
 }
-.contents_wrap .contents table.three thead th:nth-child(4) {
+.contents_wrap .contents .admission table.three thead th:nth-child(4) {
     width: 27%;
 }
-.contents_wrap .contents ul li {
+.contents_wrap .contents .admission ul li {
     width: 100%;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -115,7 +121,7 @@
     padding-left: 17px;
     margin-bottom: 5px;
 }
-.contents_wrap .contents ul li::before {
+.contents_wrap .contents .admission ul li::before {
     content: '';
     display: inline-block;
     width: 4px;
@@ -125,11 +131,12 @@
     vertical-align: 5px;
     margin-right: 10px;
 }
-.contents_wrap .contents .booking {
+.contents_wrap .contents .admission .booking {
     text-align: center;
     margin: 50px 0;
 }
-.contents_wrap .contents .booking a {
+.contents_wrap .contents .admission .booking a {
+    display: inline-block;
     font-size: 1.6rem;
     border: 1px solid #1f5153;
     background-color: #fff;
@@ -141,29 +148,133 @@
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.contents_wrap .contents .booking a:hover {
+.contents_wrap .contents .admission .booking a:hover {
     background-color: #1f5153;
     color: #fff;
 }
-.contents_wrap .contents .title_red {
+.contents_wrap .contents .admission .title_red {
     font-size: 1.4rem;
     color: #f00;
     margin-bottom: 18px;
 }
-.contents_wrap .contents ul.last {
+.contents_wrap .contents .admission ul.last {
     margin-bottom: 140px;
 }
 
 
 
 
+/* ****************** media Query **********************/
+@media screen and (max-width: 768px){
+    .contents_wrap {
+        padding-top: 56px;
+    }
+    .contents_wrap .contents {
+        padding-top: 52px;
+    }
+    .contents_wrap .contents .container {
+        width: 100%;
+        height: 100%;
+        padding: 0 16px;
+    }
+    .contents_wrap .contents .container .bg_txt {
+        height: 13%;
+        position: absolute;
+        top: 32px;
+        left: 100%;
+        margin-top: 7.5%;
+
+        -webkit-animation: bgTxtMoveMob 1.2s ease-out 0.3s forwards;
+        -moz-animation: bgTxtMoveMob 1.2s ease-out 0.3s forwards;
+        -o-animation: bgTxtMoveMob 1.2s ease-out 0.3s forwards;
+        -ms-animation: bgTxtMoveMob 1.2s ease-out 0.3s forwards;
+        animation: bgTxtMoveMob 1.2s ease-out 0.3s forwards;
+    }
+
+
+
+
+    /* ******** admission ******** */
+    .contents_wrap .contents .container .bg_txt.guide {
+        width: 54%;
+        background: url(../images/sub/guide.svg) no-repeat center / 100%;
+    }
+    .contents_wrap .contents .admission h2 {
+        font-size: 2.9rem;
+        letter-spacing: 2.5px;
+        padding: 57px 0 30px;
+    }
+    .contents_wrap .contents h3 {
+        font-size: 1.8rem;
+        word-break: keep-all;
+        margin-bottom: 12px;
+    }
+    .contents_wrap .contents .admission table tr,
+    .contents_wrap .contents .admission table th,
+    .contents_wrap .contents .admission table td {
+        font-size: 1.2rem;
+        word-break: keep-all;
+    }
+    .contents_wrap .contents .admission table thead th {
+        padding: 10px;
+    }
+    .contents_wrap .contents .admission table tbody th,
+    .contents_wrap .contents .admission table tbody td {
+        padding: 10px;
+    }
+    .contents_wrap .contents .admission table tbody td .strong {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .contents_wrap .contents .admission ul li {
+        font-size: 1.4rem;
+        text-indent: -12px;
+        padding-left: 10px;
+        word-break: keep-all;
+    }
+    .contents_wrap .contents .admission ul li::before {
+        margin-right: 8px;
+    }
+    .contents_wrap .contents .admission .booking {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .contents_wrap .contents .admission .booking a {
+        font-size: 1.4rem;
+        background-color: #1f5153;
+        color: #fff;
+        padding: 13px 28px;
+
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+    }
+    .contents_wrap .contents .admission .booking a:hover {
+        background-color: #1f5153;
+        color: #fff;
+    }
+    .contents_wrap .contents .admission .title_red {
+        margin: -6px 0 12px 0;
+        word-break: keep-all;
+    }
+    .contents_wrap .contents .admission ul.last {
+        margin-bottom: 72px;
+    }
+}
+
+
+
+
 /* ************************* 애니메이션 **************************** */
+/* bgTxtMove */
 @-webkit-keyframes bgTxtMove {
     0% {
         left: 100%;
     }
     100% {
-        left: calc(50% - 100px);
+        left: calc(50% + 100px);
     }
 }
 @-moz-keyframes bgTxtMove {
@@ -171,7 +282,7 @@
         left: 100%;
     }
     100% {
-        left: calc(50% - 100px);
+        left: calc(50% + 100px);
     }
 }
 @-o-keyframes bgTxtMove {
@@ -179,7 +290,7 @@
         left: 100%;
     }
     100% {
-        left: calc(50% - 100px);
+        left: calc(50% + 100px);
     }
 }
 @-ms-keyframes bgTxtMove {
@@ -187,7 +298,7 @@
         left: 100%;
     }
     100% {
-        left: calc(50% - 100px);
+        left: calc(50% + 100px);
     }
 }
 @keyframes bgTxtMove {
@@ -196,5 +307,47 @@
     }
     100% {
         left: calc(50% + 100px);
+    }
+}
+
+/* bgTxtMoveMob */
+@-webkit-keyframes bgTxtMoveMob {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% + 50px);
+    }
+}
+@-moz-keyframes bgTxtMoveMob {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% + 50px);
+    }
+}
+@-o-keyframes bgTxtMoveMob {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% + 50px);
+    }
+}
+@-ms-keyframes bgTxtMoveMob {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% + 50px);
+    }
+}
+@keyframes bgTxtMoveMob {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: calc(50% + 50px);
     }
 }
