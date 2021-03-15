@@ -60,6 +60,18 @@ $(function(){
         }
     });
     
-    
+    $(window).on("load resize", function(e){
+        var innerWidth = window.innerWidth;
 
+        if(innerWidth > 768){ //desktop
+            // 데스크탑에서 sub_nav 보여주기
+            $(".contents_wrap .sub_nav.exhibition").css("display", "block");
+            $("header").css("border-bottom", "0");
+        } else { //mobile
+            // 모바일에서 sub_nav 없는것들은 보여주지 않기
+            $(".contents_wrap .sub_nav.exhibition").css("display", "none");
+            $(".contents_wrap .contents.exhibition").css("padding-top", "0");
+            $("header").css("border-bottom", "1px solid #eaeaea");
+        }
+    });
 });

@@ -3,10 +3,6 @@
 
 
 
-section {
-    max-width: 100%;
-    min-width: 0;
-}
 .contents_wrap .contents .container {
     width: 1280px;
     margin: 0 auto;
@@ -164,8 +160,31 @@ section {
 
 
 
+/* *************** admission Area Start **************** */
+.contents_wrap .contents .container .bg_txt.exhibition {
+    width: 1363px;
+    background: url(../images/sub/exhibition.svg) no-repeat center;
+}
+.contents_wrap .contents .exhibition h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 120px 0 80px;
+}
+
+
+
+
 /* ****************** media Query **********************/
 @media screen and (max-width: 768px){
+
+    section {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    
     .contents_wrap {
         padding-top: 56px;
     }
@@ -261,6 +280,20 @@ section {
     }
     .contents_wrap .contents .admission ul.last {
         margin-bottom: 72px;
+    }
+
+
+
+
+    /* ******** exhibition ******** */
+    .contents_wrap .contents .container .bg_txt.exhibition {
+        width: 94.7%;
+        background: url(../images/sub/exhibition.svg) no-repeat center / 100%;
+    }
+    .contents_wrap .contents .exhibition h2 {
+        font-size: 2.9rem;
+        letter-spacing: 2.5px;
+        padding: 57px 0 30px;
     }
 }
 
