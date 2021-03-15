@@ -364,7 +364,7 @@ header nav .mob_booking_btn {
     color: #999;
     padding: 8px 15px;
 }
-.contents_wrap .sub_nav .container > ul ul > li:first-child > a {
+.contents_wrap .sub_nav .container > ul ul > li > a.on {
     color: #1f5153;
 }
 .contents_wrap .sub_nav .container > ul ul > li > a:hover {
