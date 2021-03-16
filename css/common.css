@@ -299,6 +299,10 @@ header nav .mob_booking_btn {
 .gnb_all .gnb_all_bottom nav > ul > li > a {
     color: #fff;
 }
+/* sitemap */
+.sitemap {
+    display: none;
+}
 
 
 
@@ -557,6 +561,9 @@ footer .footer_bottom .copyright {
     /* nav */
     header nav {
         display: none;
+    }
+    /* header nav {
+        display: none;
         width: 100%;
         height: calc(100% - 56px + 1px);
         position: fixed;
@@ -649,9 +656,9 @@ footer .footer_bottom .copyright {
     header nav .gnb > li > ul > li > a:hover {
         background-color: rgba(0, 0, 0, 0);
         color: #000;
-    }
+    } */
     /* mob_booking_btn */
-    header nav .mob_booking_btn {
+    /* header nav .mob_booking_btn {
         display: block;
         width: 200px;
         text-align: center;
@@ -666,9 +673,12 @@ footer .footer_bottom .copyright {
         -ms-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
-    }
+    } */
     /* submenu */
     .submenu {
+        display: none;
+    }
+    /* .submenu {
         width: 340px;
         float: none;
         position: relative;
@@ -676,7 +686,7 @@ footer .footer_bottom .copyright {
         right: 0;
         margin: 0 auto;
         padding: 24px 0;
-    }
+    } */
     /* gnb_all_btn */
     .gnb_all_btn {
         display: none;
