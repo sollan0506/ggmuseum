@@ -172,6 +172,113 @@
     letter-spacing: 5px;
     padding: 120px 0 80px;
 }
+.contents_wrap .contents .exhibition .top_btn_area {
+    width: 100%;
+    border-bottom: 2px solid #333;
+}
+.contents_wrap .contents .exhibition .top_btn_area a {
+    display: block;
+    float: right;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #266466;
+    position: relative;
+    padding-bottom: 16px;
+    padding-right: 40px;
+}
+.contents_wrap .contents .exhibition .top_btn_area a::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/sub/ic-arrow-right-green-24-dp.svg) no-repeat center / 19px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    -webkit-transition: right 0.2s ease-in;
+    -moz-transition: right 0.2s ease-in;
+    -o-transition: right 0.2s ease-in;
+    -ms-transition: right 0.2s ease-in;
+    transition: right 0.2s ease-in;
+}
+.contents_wrap .contents .exhibition .top_btn_area a:hover::after {
+    right: 0;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area {
+    padding-top: 56px;
+    margin-bottom: 83px;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a {
+    display: block;
+    width: 620px;
+    float: left;
+    margin-bottom: 27px;
+    margin-right: 40px;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a:nth-child(even) {
+    margin-right: 0;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a .img_box {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a .img_box img {
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a:hover .img_box img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption {
+    padding: 30px 0;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption .badge {
+    display: inline-block;
+    min-width: 64px;
+    background-color: #fff;
+    border: 1px solid #1f5153;
+    color: #1f5153;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 14px;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption .title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl {
+    margin-bottom: 10px;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dt,
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dd {
+    float: left;
+    font-size: 1.4rem;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dt {
+    width: 4.2rem;
+    font-weight: 700;
+}
+.contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dd {
+    width: calc(100% - 42px);
+}
 
 
 
