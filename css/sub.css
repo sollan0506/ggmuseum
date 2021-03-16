@@ -160,7 +160,7 @@
 
 
 
-/* *************** admission Area Start **************** */
+/* *************** exhibition Area Start **************** */
 .contents_wrap .contents .container .bg_txt.exhibition {
     width: 1363px;
     background: url(../images/sub/exhibition.svg) no-repeat center;
@@ -273,7 +273,7 @@
     font-size: 1.4rem;
 }
 .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dt {
-    width: 4.2rem;
+    width: 42px;
     font-weight: 700;
 }
 .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dd {
@@ -401,6 +401,81 @@
         font-size: 2.9rem;
         letter-spacing: 2.5px;
         padding: 57px 0 30px;
+    }
+    .contents_wrap .contents .exhibition .top_btn_area a {
+        font-size: 1.4rem;
+        padding-bottom: 14px;
+        padding-right: 30px;
+    }
+    .contents_wrap .contents .exhibition .top_btn_area a::after {
+        right: 0;
+
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area {
+        padding-top: 0;
+        margin-bottom: 74px;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a {
+        width: 100%;
+        float: none;
+        margin-bottom: 16px;
+        margin-right: 0;
+        padding-top: 16px;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a .img_box {
+        position: relative;
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a .img_box img {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a:hover .img_box img {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption {
+        padding: 24px 0;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption .badge {
+        min-width: 48px;
+        font-size: 1rem;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption .title {
+        font-size: 1.8rem;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl {
+        margin-bottom: 5px;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dt,
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dd {
+        font-size: 1.2rem;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dt {
+        width: 32px;
+        font-weight: 500;
+    }
+    .contents_wrap .contents .exhibition .exhibition_box_area a figcaption dl dd {
+        width: calc(100% - 32px);
     }
 }
 
