@@ -46,7 +46,7 @@ header .logo a img {
     height: 100%;
 }
 /* nav */
-header nav {
+header .main_nav {
     width: 40%;
     height: 100%;
     position: absolute; 
@@ -58,21 +58,21 @@ header nav {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-header nav > div {
+header .main_nav > div {
     width: 100%;
     height: 100%;
 }
-header nav .gnb {
+header .main_nav .gnb {
     width: 100%;
     height: 100%;
 }
-header nav .gnb > li {
+header .main_nav .gnb > li {
     width: calc(100% / 6 - 2%);
     height: 100%;
     float: left;
     position: relative;
 }
-header nav .gnb > li > a {
+header .main_nav .gnb > li > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -81,10 +81,10 @@ header nav .gnb > li > a {
     font-weight: 500;
     padding-top: 40px;
 }
-header nav .gnb > li > a:hover {
+header .main_nav .gnb > li > a:hover {
     color: #1f5153;
 }
-header nav .gnb > li > ul {
+header .main_nav .gnb > li > ul {
     display: none;
     width: 180px;
     opacity: 0;
@@ -98,11 +98,11 @@ header nav .gnb > li > ul {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-header nav .gnb > li > ul > li {
+header .main_nav .gnb > li > ul > li {
     width: 100%;
     border-top: 1px solid #f0f0f0;
 }
-header nav .gnb > li > ul > li > a {
+header .main_nav .gnb > li > ul > li > a {
     display: block;
     font-size: 1.6rem;
 
@@ -114,12 +114,12 @@ header nav .gnb > li > ul > li > a {
     
     padding: 20px 24px;
 }
-header nav .gnb > li > ul > li > a:hover {
+header .main_nav .gnb > li > ul > li > a:hover {
     background-color: #1f5153;
     color: #fff;
 }
 /* mob_booking_btn */
-header nav .mob_booking_btn {
+header .main_nav .mob_booking_btn {
     display: none;
 }
 /* submenu */
@@ -559,134 +559,13 @@ footer .footer_bottom .copyright {
         margin: 11px 0;
     }
     /* nav */
-    header nav {
+    header .main_nav {
         display: none;
     }
-    /* header nav {
-        display: none;
-        width: 100%;
-        height: calc(100% - 56px + 1px);
-        position: fixed;
-        left: 0;
-        top: 56px;
-        background-color: #fff;
-        border-top: 1px solid #e0e0e0;
-        overflow: auto;
-        padding: 0 16px;
-
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-    }
-    header nav > div {
-        height: calc(100% - 77px - 50px);
-    }
-    header nav > div.on {
-        height: auto;
-    }
-    header nav .gnb {
-        height: auto;
-    }
-    header nav .gnb > li {
-        width: 100%;
-        height: auto;
-        float: none;
-    }
-    header nav .gnb > li > a {
-        height: auto;
-        text-align: left;
-        border-bottom: 1px solid #f0f0f0;
-        position: relative;
-        padding: 18px 16px;
-    }
-    header nav .gnb > li > a:hover {
-        color: #000;
-    }
-    header nav .gnb > li > a::after {
-        content: '';
-        display: block;
-        width: 24px;
-        height: 24px;
-        background: url(../images/main/ic-angle-down-black-24-dp.svg) no-repeat center / 10px;
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-        transition: all 0.2s ease-in;
-    }
-    header nav .gnb > li > a.on::after {
-        -webkit-transform: translateY(-50%) rotate( -180deg );
-        -moz-transform: translateY(-50%) rotate( -180deg );
-        -o-transform: translateY(-50%) rotate( -180deg );
-        -ms-transform: translateY(-50%) rotate( -180deg );
-        transform: translateY(-50%) rotate( -180deg );
-    }
-    header nav .gnb > li > ul {
-        display: none;
-        width: 100%;
-        opacity: 1;
-        background-color: #f8f9fa;
-        position: static;
-        top: 0;
-        left: 0;
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-        padding: 14px 32px;
-    }
-    header nav .gnb > li > ul > li {
-        border-top: none;
-    }
-    header nav .gnb > li > ul > li > a {
-        padding: 10px 0;
-    }
-    header nav .gnb > li > ul > li > a:hover {
-        background-color: rgba(0, 0, 0, 0);
-        color: #000;
-    } */
-    /* mob_booking_btn */
-    /* header nav .mob_booking_btn {
-        display: block;
-        width: 200px;
-        text-align: center;
-        border: 1px solid #1f5153;
-        background-color: #1f5153;
-        color: #fff;
-        padding: 13px 28px;
-        margin: 30px auto;
-
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-    } */
     /* submenu */
     .submenu {
         display: none;
     }
-    /* .submenu {
-        width: 340px;
-        float: none;
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: 0 auto;
-        padding: 24px 0;
-    } */
     /* gnb_all_btn */
     .gnb_all_btn {
         display: none;
@@ -734,7 +613,147 @@ footer .footer_bottom .copyright {
         transform-origin: 0% 100%;
         transform: rotate( -45deg );
     }
+    /* sitemap */
+    .sitemap {
+        display: none;
+        width: 100%;
+        height: calc(100% - 56px + 1px);
+        position: fixed;
+        left: 0;
+        top: 56px;
+    }
+    .sitemap .sitemap_body {
+        height: 100%;
+        background-color: #fff;
+        overflow: auto;
+        padding: 0 16px;
+    }
+    .sitemap .sitemap_body .sitemap_gnb {
+        min-height: calc(100% - 77px - 50px); 
+    }
+    .sitemap .sitemap_body .sitemap_gnb li {
+        width: 100%;
+    }
+    .sitemap .sitemap_body .sitemap_gnb li .gnb_tit {
+        display: block;
+        position: relative;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 18px 16px;
+    }
+    .sitemap .sitemap_body .sitemap_gnb li .gnb_tit.on {
+        color: #1f5153;
+    }
+    .sitemap .sitemap_body .sitemap_gnb li .gnb_tit::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../images/main/ic-angle-down-black-24-dp.svg) no-repeat center / 10px;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    .sitemap .sitemap_body .sitemap_gnb li .gnb_tit.on::after {
+        background: url(../images/main/ic-angle-down-black-24-dp.svg) no-repeat center / 10px;
+        
+        -webkit-transform: translateY(-50%) rotate(180deg);
+        -moz-transform: translateY(-50%) rotate(180deg);
+        -o-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .sitemap .sitemap_body .sitemap_gnb li .gnb_subtits {
+        display: none;
+        padding: 14px 32px;
+        background-color: #f8f9fa;
+    }
+    .sitemap .sitemap_body .sitemap_gnb li .gnb_subtits li a {
+        display: block;
+        font-size: 1.6rem;
+        padding: 10px 0;
+    }
+    .sitemap .sitemap_body .sitemap_gnb .btn_reservation {
+        display: block;
+        max-width: 200px;
+        border: 1px solid #1f5153;
+        background-color: #1f5153;
+        text-align: center;
+        margin: 30px auto;
+        padding: 13px 28px;
+    }
+    .sitemap .sitemap_body .sitemap_gnb .btn_reservation span {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+    }
+    .sitemap .sitemap_body .submenu_list {
+        text-align: center;
+        padding: 24px 0;
+    }
+    .sitemap .sitemap_body .submenu_list ul {
+        display: inline-block;
+    }
+    .sitemap .sitemap_body .submenu_list ul li {
+        float: left;
+        margin-right: 8px;
+    }
+    .sitemap .sitemap_body .submenu_list ul li:last-child {
+        margin-right: 0;
+    }
+    .sitemap .sitemap_body .submenu_list ul li::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 12px;
+        background-color: rgba(0, 0, 0, 0.12);
+        margin-left: 8px;
+    }
+    .sitemap .sitemap_body .submenu_list ul li:last-child::after {
+        display: none;
+    }
+    .sitemap .sitemap_body .submenu_list ul li a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .sitemap .sitemap_body .submenu_list ul li.to_link a::after {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(../images/main/icon-link-black-24-dp.svg) no-repeat center / 12px;
+        vertical-align: -3px;
+    }
+    .sitemap .sitemap_body .submenu_list ul li select {
+        height: 24px;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/main/ic-dropdown-black-12-dp.svg) no-repeat;
+        background-position: right 8px center;
+        background-size: 10px;
+        color: #333;
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 0 24px 0 0;
+    }
     
+
 
     
     /* ********* sub_nav ********* */
